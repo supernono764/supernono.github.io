@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            width: 100vw;
+            height: 230vh;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg,
+                    hsl(170deg, 80%, 70%),
+                    hsl(190deg, 80%, 70%),
+                    hsl(250deg, 80%, 70%),
+                    hsl(320deg, 80%, 70%));
+            background-size: 500%;
+            animation: jianbian 15s linear infinite;
+        }
+
+        @keyframes jianbian {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        .page {
+            position: relative;
+        }
+
+        .leftpage {
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 25%;
+            /* background: rgba(0, 0, 0, 0.5); */
+            height: 100%;
+        }
+
+        .name {
+            margin-top: 80px;
+            padding-left: 20%;
+            font-size: 26px;
+        }
+
+        .leftpage ul {
+            margin-top: 45%;
+        }
+
+        .leftpage ul li {
+            padding: 10px 0 0 20%;
+            font-size: 24px;
+        }
+
+        .bilibili {
+            width: 20px;
+            height: 20px;
+        }
+
+        .rightpage {
+            position: absolute;
+            top: 0;
+            right: 5%;
+            width: 70%;
+        }
+
+        .intro {
+            padding-bottom: 15%;
+            padding-left: 4%;
+            border-bottom: 10px solid;
+            overflow: hidden;
+        }
+
+        .hallo {
+            margin: 15% 0 0 0;
+            font-size: 30px;
+        }
+
+        .introduce_one {
+            margin: 4% 0 0 0;
+            font-size: 54px;
+        }
+
+        .push-button {
+            margin-top: 2%;
+        }
+
+        .push-button a {
+            text-decoration: none;
+        }
+
+        .push-button-same {
+            width: 160px;
+            height: 55px;
+            line-height: 55px;
+            font-size: 20px;
+            font-weight: 600;
+            text-align: center;
+            border: 2px solid black;
+            border-radius: 20%/50%;
+        }
+
+        .push-button-one {
+            float: left;
+        }
+
+        .push-button-two {
+            float: left;
+            margin-left: 2%;
+            background-color: black;
+        }
+
+        .push-button-two a {
+            color: white;
+        }
+
+        .content {
+            margin-top: 8%;
+            padding-left: 4%;
+        }
+
+        .introduce_two {
+            width: 100%;
+            height: 240px;
+            font-size: 20px;
+            font-weight: 400;
+            /* background-color: yellow; */
+        }
+
+        .introduce_two :nth-child(1) {
+            float: left;
+        }
+
+        .introduce_two :nth-child(2) {
+            float: left;
+            padding-left: 70px;
+        }
+
+        .details {
+            width: 100%;
+            height: 480px;
+            /* background-color: yellowgreen; */
+        }
+
+        .details ul li {
+            float: left;
+            margin-right: 3.5%;
+            width: 30%;
+            height: 480px;
+            background-color: white;
+        }
+
+        .details ul li:last-child {
+            margin-right: 0;
+        }
+
+        .details ul li img {
+            width: 100%;
+        }
+
+        .p_title {
+            margin: 30px;
+            font-size: 24px;
+        }
+
+        .p_content {
+            margin: 0 30px;
+            font-size: 16px;
+            line-height: 30px;
+        }
+
+
+        .push-button-three {
+            margin: 10px 0 0 30px;
+            width: 100px;
+            height: 30px;
+            font-size: 14px;
+            font-weight: 600;
+            text-align: center;
+            line-height: 30px;
+            border: 2px solid black;
+            border-radius: 20%/50%;
+            background-color: black;
+        }
+
+        .push-button-three a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .copyright {
+            margin: 13% 0 0 4%;
+            font-size: 18px;
+        }
+
+        .copyright_one {
+            float: left;
+            font-weight: 700;
+        }
+
+        .copyright_two {
+            float: left;
+            margin-left: 20px;
+        }
+
+        .copyright_three {
+            float: right;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="page">
+        <div class="leftpage">
+            <div class="name">
+                <a href="#">Supernono</a>
+            </div>
+            <ul>
+                <li><a href="#">Intro</a></li>
+                <li><a href="#">Details</a></li>
+                <li><a href="#">Blog</a></li>
+            </ul>
+            <div class="tubiao">
+                <!-- <img src="./images/bilibili.jpg" alt="" class="bilibili"> -->
+            </div>
+        </div>
+        <div class="rightpage">
+            <div class="intro">
+                <div class="hallo">
+                    <p>Hi there!</p>
+                </div>
+                <div class="introduce_one">
+                    <p>My name is Supernono, and I am a
+                        podcaster and writer. This is my little
+                        corner on the web.</p>
+                </div>
+                <div class="push-button">
+                    <div class="push-button-one push-button-same">
+                        <a href="#">About me</a>
+                    </div>
+                    <div class="push-button-two push-button-same">
+                        <a href="#">Get In Touch</a>
+                    </div>
+                </div>
+            </div>
+            <div class="content">
+                <div class="introduce_two">
+                    <p>Lorem ipsum dolor sit amet, consectetur <br>
+                        adipisicing elit, sed do eiusmod tempor<br>
+                        incididunt ut labore et dolore magna aliqua. Ut <br>
+                        enim ad minim veniam, quis nostrud exercitation <br>
+                        ullamco laboris nisi ut aliquip ex ea commodo <br>
+                        consequat. Duis aute irure dolor in reprehenderit <br>
+                        in voluptate velit esse cillum.
+                    </p>
+                    <p>
+                        Sed ut perspiciatis unde omnis iste natus <br>
+                        rror sit voluptatem accusantium <br>
+                        doloremque laudantium,totam rem aperiam, <br>
+                        eaque ipsa quae ab illo inventore veritatis et <br>
+                        quasi architecto beatae vitae dicta sunt <br>
+                        explicabo.
+                    </p>
+                </div>
+                <div class="details">
+                    <ul>
+                        <li>
+                            <img src="./images/feature-1.png" alt="">
+                            <p class="p_title">My Story</p>
+                            <p class="p_content">
+                                Learn how I became an artist, and how I developed this particular
+                                style.</p>
+                            <div class="push-button-three">
+                                <a href="">Read More</a>
+                            </div>
+                        </li>
+                        <li class="box2 B">
+                            <img src="./images/feature-2.png" alt="">
+                            <p class="p_title">Reach Out</p>
+                            <p class="p_content">
+                                Want to show my art in your gallery? Send me an email and we’ll chat.
+                            </p>
+                            <div class="push-button-three">
+                                <a href="">Contact Me</a>
+                            </div>
+                        </li>
+                        <li class="box3 B">
+                            <img src="./images/feature-3.png" alt="">
+                            <p class="p_title">Get Social</p>
+                            <p class="p_content">
+                                Love my work? Follow me online to see new paintings first.
+                            </p>
+                            <div class="push-button-three">
+                                <a href="">Follow Me</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p class="copyright_one">&copy;2022 <a href="http://127.0.0.1:5500/index.html"> Supernono</a></p>
+                <p class="copyright_two">Theme by <a href="https://wordpress.org/themes/bjork/">Björk</a></p>
+                <p class="copyright_three">Powered by <a href="#">Supernono</a></p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -72,9 +72,27 @@ li {
     font-size: 24px;
 }
 
-.bilibili {
-    width: 20px;
-    height: 20px;
+.logo {
+    margin-top: 50%;
+    padding-left: 14%;
+}
+
+.logo i {
+    padding-left: 20px;
+}
+
+.logo a {
+    text-decoration: none;
+
+}
+
+.logo a i {
+    cursor: pointer;
+    transition: all 0.8s;
+}
+
+.logo a i:hover {
+    transform: scale(2);
 }
 
 .rightpage {
@@ -144,6 +162,7 @@ li {
     height: 240px;
     font-size: 20px;
     font-weight: 400;
+    line-height: 30px;
     /* background-color: yellow; */
 }
 

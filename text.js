@@ -2,12 +2,12 @@
 $(function () {
     $(".push-button-one a").click(function () {
         $(".rightpage").hide();
-        $(".about-me").show();
+        $(".about-me").fadeIn(700);
     })
 });
 $(function () {
     $(".push-button-close1 a").click(function () {
-        $(".rightpage").show();
+        $(".rightpage").fadeIn(700);
         $(".about-me").hide();
     })
 });
@@ -15,12 +15,12 @@ $(function () {
 $(function () {
     $(".push-button-three a").click(function () {
         $(".rightpage").hide();
-        $(".readmore").show();
+        $(".readmore").fadeIn(700);
     })
 });
 $(function () {
     $(".push-button-close2 a").click(function () {
-        $(".rightpage").show();
+        $(".rightpage").fadeIn(700);
         $(".readmore").hide();
     })
 });
@@ -28,12 +28,14 @@ $(function () {
 $(function () {
     $(".push-button-four a").click(function () {
         $(".rightpage").hide();
-        $(".LE").show();
+        $(".LE").fadeIn(700);
     })
 });
 $(function () {
     $(".push-button-close3 a").click(function () {
-        $(".rightpage").show();
+        $(".rightpage").fadeIn(700);
         $(".LE").hide();
     })
 });
+
+$("#b").fadeIn(700);
